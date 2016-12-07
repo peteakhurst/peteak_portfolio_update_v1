@@ -155,7 +155,7 @@ img {
 .gallery li {
   float: left;
   margin: 2.5%;
-  padding: 20px 0 40px 5px;
+  padding: 20px 0 40px 0;
 }
 
 footer .copyright {
