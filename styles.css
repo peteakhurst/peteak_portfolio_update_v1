@@ -73,7 +73,7 @@ img:hover {
 
 header {
   text-align: center;
-  background: url('https://unsplash.it/1400/933/?blur') no-repeat top center ;
+  background: url('images/max-bg.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
