@@ -228,7 +228,6 @@ a.social:hover {
     padding: 0 30px;
   }
 
-
   main {
     padding-top: 20px;
   }
@@ -241,7 +240,6 @@ a.social:hover {
     max-width: 100%;
   }
 
-  
   .gallery {
     list-style: none;
   }
@@ -253,22 +251,22 @@ a.social:hover {
   }
   
   .gallery img {
-  box-shadow: 0 1px 5px rgba(0,0,0,0.15);
-  transition: all .3s;
-}
+    box-shadow: 0 1px 5px rgba(0,0,0,0.15);
+    transition: all .3s;
+  }
 
 /* Pre-render the bigger shadow, but hide it */
-.gallery img::after {
-  box-shadow: 0 15px 20px rgba(0,0,0,0.73);
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
+  .gallery img::after {
+    box-shadow: 0 15px 20px rgba(0,0,0,0.73);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
 
 /* Transition to showing the bigger shadow on hover */
-img:hover {
-   opacity: 1;
-   transform: scale(1.1);
-}
+  img:hover {
+     opacity: 1;
+     transform: scale(1.1);
+  }
 
   footer {
     font-size: 1.3em;
