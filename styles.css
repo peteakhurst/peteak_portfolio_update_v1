@@ -29,15 +29,34 @@ a:hover {
   color:#6633ff;
 }
 
-.gallery img:hover {
+/*.gallery img:hover {
   
     
-  }
+  }*/
 
-img:hover {
+/*img:hover {
   border-bottom: none;
   transform: scale(1.1);
-  transition: all .5s;
+  transition: all .5s;*/
+
+.gallery img {
+  box-shadow: 0 1px 5px rgba(0,0,0,0.15);
+  transition: all .3s;
+}
+
+/* Pre-render the bigger shadow, but hide it */
+.gallery img::after {
+  box-shadow: 0 15px 20px rgba(0,0,0,0.73);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Transition to showing the bigger shadow on hover */
+img:hover {
+   opacity: 1;
+   transform: scale(1.1);
+   
+   
 }
 
 /* Section Styles */
@@ -194,6 +213,7 @@ a.github {
 }
 a.social:hover {
   opacity: 1;
+  transform: scale(1.1);
 }
 .clearfix {
   clear: both;
