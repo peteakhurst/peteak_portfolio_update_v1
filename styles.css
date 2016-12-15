@@ -29,36 +29,6 @@ a:hover {
   color:#6633ff;
 }
 
-/*.gallery img:hover {
-  
-    
-  }*/
-
-/*img:hover {
-  border-bottom: none;
-  transform: scale(1.1);
-  transition: all .5s;*/
-
-.gallery img {
-  box-shadow: 0 1px 5px rgba(0,0,0,0.15);
-  transition: all .3s;
-}
-
-/* Pre-render the bigger shadow, but hide it */
-.gallery img::after {
-  box-shadow: 0 15px 20px rgba(0,0,0,0.73);
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
-
-/* Transition to showing the bigger shadow on hover */
-img:hover {
-   opacity: 1;
-   transform: scale(1.1);
-   
-   
-}
-
 /* Section Styles */
 
 .main-nav {
@@ -98,9 +68,11 @@ header {
   overflow: hidden;
   padding-top: 60px;
 }
+
 header {
   line-height: 1.5;
 }
+
 header .profile-image {
   margin-top: 50px;
   width: 150px;
@@ -109,9 +81,11 @@ header .profile-image {
   border: 3px solid white;
   transition: all .5s;
 }
+
 header .profile-image:hover {
   transform: scale(1.2);
 }
+
 .tag {
   background-color: #efefef;
   color: black;
@@ -120,10 +94,12 @@ header .profile-image:hover {
   display: table;
   margin: 10px auto;
 } 
+
 .location {
   background-color: #222;
   color: yellow;
 }
+
 .card {
   margin: 30px;
   padding: 20px 40px 40px;
@@ -134,6 +110,7 @@ header .profile-image:hover {
   border-radius: 6px;
   transition: all .5s;
 }
+
 .card:hover {
   border-color: #ff99ff;
 }
@@ -164,7 +141,6 @@ ul.skills {
   margin: 0;
   padding: 0;
   list-style: none;
-  
 }
 
 img {
@@ -178,9 +154,12 @@ img {
 }
 
 .gallery p {
-  
   margin-top: 30px;
 }
+
+/*=========================
+       FOOTER - STYLES
+===========================*/
 
 footer .copyright {
   top: -8px;
@@ -257,6 +236,7 @@ a.social:hover {
   img {
     max-width: 100%;
   }
+
   
   .gallery {
     list-style: none;
@@ -267,6 +247,24 @@ a.social:hover {
     float: left;
     width: 28.3333%;
   }
+  
+  .gallery img {
+  box-shadow: 0 1px 5px rgba(0,0,0,0.15);
+  transition: all .3s;
+}
+
+/* Pre-render the bigger shadow, but hide it */
+.gallery img::after {
+  box-shadow: 0 15px 20px rgba(0,0,0,0.73);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Transition to showing the bigger shadow on hover */
+img:hover {
+   opacity: 1;
+   transform: scale(1.1);
+}
 
   footer {
     font-size: 1.3em;
